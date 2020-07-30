@@ -15,7 +15,9 @@ code {
 #container {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
   margin: 15px;
   padding: 5px;
 }
@@ -35,4 +37,8 @@ code {
   font: 20;
   color: blue;
   width: 100px;
+}
+
+#container .video-input {
+  width: 400px;
 }

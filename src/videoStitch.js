@@ -1,26 +1,19 @@
-'use strict';
+// const concat = require('ffmpeg-concat');
 
-let videoStitch = require('video-stitch');
+// async function mergeVideos(videos){
+//   await concat({
+//    output: 'test.mp4',
+//    videos,
+//    audio:"/home/username/Downloads/music/music.m4a",
+//    transition: {
+//      name:"fadegrayscale",
+//      duration: 500
+//    }
+// })
+// };
 
-let videoConcat = videoStitch.concat;
+function mergeVideos(videos) {
+  return 'here is your concatenated video';
+}
 
-videoConcat({
-    silent: true, // optional. if set to false, gives detailed output on console
-    overwrite: false // optional. by default, if file already exists, ffmpeg will ask for overwriting in console and that pause the process. if set to true, it will force overwriting. if set to false it will prevent overwriting.
-  })
-  .clips([
-    {
-      "fileName": "FILENAME"
-    },
-    {
-      "fileName": "FILENAME"
-    },
-    {
-      "fileName": "FILENAME"
-    }
-  ])
-  .output("myfilename") //optional absolute file name for output file
-  .concat()
-  .then((outputFileName) => {
-
-  });
+export default mergeVideos;
