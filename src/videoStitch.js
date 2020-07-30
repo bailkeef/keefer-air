@@ -14,7 +14,7 @@
 
 function mergeVideos(videos) {
   alert("OOPS Something went wrong (it's me, not you)");
-  return 'I should have concatenated' + [...videos];
+  return 'I should have stitched your videos'
 }
 
 export default mergeVideos;
