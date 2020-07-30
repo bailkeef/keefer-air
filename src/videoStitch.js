@@ -13,7 +13,8 @@
 // };
 
 function mergeVideos(videos) {
-  return 'here is your concatenated video';
+  alert("OOPS Something went wrong (it's me, not you)");
+  return 'I should have concatenated' + [...videos];
 }
 
 export default mergeVideos;

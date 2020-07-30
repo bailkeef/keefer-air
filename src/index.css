@@ -16,6 +16,10 @@ p {
   margin: 3px;
 }
 
+img {
+  margin: 30px;
+}
+
 #container {
   display: flex;
   flex-direction: column;

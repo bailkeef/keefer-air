@@ -11,7 +11,6 @@ class ConcatVideos extends React.Component {
       video1load: false,
       video2load: false,
       loading: false,
-      message: '',
     };
     this.combineVideos = this.combineVideos.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -27,7 +26,7 @@ class ConcatVideos extends React.Component {
     let video2 = await axios.get(this.state.video2);
     let videos = [video1, video2];
     let newVideo = mergeVideos(videos);
-    this.state.message = newVideo;
+    console.log(newVideo);
     this.setState({loading: false});
   }
 
