@@ -12,20 +12,37 @@ code {
     monospace;
 }
 
+p {
+  margin: 3px;
+}
+
 #container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-weight: bold;
   width: 600px;
   margin: 15px;
   padding: 5px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 15px;
 }
 
 #container button {
   font: 20;
-  color: blue;
-  width: 300px;
+  font-weight: bold;
+  height: 25px;
+  color: navy;
+  width: 250px;
+  margin: 20px;
+}
+
+#container input {
+  font: 24;
+  height: 20px;
 }
 
 #container .video {
@@ -34,11 +51,14 @@ code {
 }
 
 #container .video button {
-  font: 20;
-  color: blue;
   width: 100px;
+  /* padding: 10px;
+  margin: 10px; */
 }
 
 #container .video-input {
   width: 400px;
 }
+
+
+
